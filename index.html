@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GaleriaVerso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1 class="titulo">Galeria de Fotos</h1>
+    <nav class="filtros">
+      <button class="filtro ativo" data-categoria="todas">Todas</button>
+      <button class="filtro" data-categoria="Natureza">Natureza</button>
+      <button class="filtro" data-categoria="Cidade">Cidade</button>
+      <button class="filtro" data-categoria="Pessoas">Pessoas</button>
+      <button class="filtro" data-categoria="Pôr do Sol">Pôr do Sol</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="galeria" class="galeria"></section>
+    <div id="mensagem-vazio" class="mensagem-vazio escondido">
+      <img src="assets/icone-vazio.svg" alt="Nenhuma imagem encontrada" />
+      <p>Nenhuma imagem encontrada nesta categoria.</p>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox escondido">
+    <div class="conteudo-lightbox">
+      <button id="fechar-lightbox" aria-label="Fechar lightbox">✕</button>
+      <img id="imagem-ampliada" src="" alt="" />
+      <div class="detalhes">
+        <h2 id="titulo-lightbox"></h2>
+        <p id="descricao-lightbox"></p>
+      </div>
+    </div>
+</body>
+
+</html>
