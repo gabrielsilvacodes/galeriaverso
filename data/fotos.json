@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "titulo": "Praia em João Pessoa",
+    "categoria": "Viagens",
+    "descricao": "Vista deslumbrante durante a passeio.",
+    "imagem": "img/passeio-jp.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo": "Aniversário da Tia Maria",
+    "categoria": "Família",
+    "descricao": "Reunião especial com toda a família reunida.",
+    "imagem": "img/aniversario-tia.jpeg"
+  },
+  {
+    "id": 3,
+    "titulo": "Nymeria descansando",
+    "categoria": "Animais",
+    "descricao": "Momento fofo de Nymeria.",
+    "imagem": "img/nymeria.jpeg"
+  },
+  {
+    "id": 4,
+    "titulo": "Chuva em Patos",
+    "categoria": "Momentos",
+    "descricao": "Tarde de chuva em um dia quente.",
+    "imagem": "img/chuva-patos.jpeg"
+  },
+  {
+    "id": 5,
+    "titulo": "Minha Namorada",
+    "categoria": "Pessoas",
+    "descricao": "Minha namorada de terno.",
+    "imagem": "img/namorada.jpeg"
+  }
+]

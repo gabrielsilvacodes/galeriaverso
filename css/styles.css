@@ -1,0 +1,216 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.filtro {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filtro:hover,
+.filtro.ativo {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+/* Galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card de imagem */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card .info {
+  padding: 0.75rem 1rem;
+}
+
+.card .titulo {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card .descricao {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Tag de categoria */
+.card .tag {
+  background-color: #ccc;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.lightbox .conteudo-lightbox {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.lightbox .detalhes h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.lightbox .detalhes p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Botão de fechar */
+#fechar-lightbox {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+
+#fechar-lightbox:hover {
+  color: #0077cc;
+}
+
+.mensagem-vazio {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #777;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mensagem-vazio img {
+  width: 120px;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.escondido {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .filtros {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card .info {
+    padding: 0.5rem 0.75rem;
+  }
+}
